@@ -1,10 +1,10 @@
 'use strict';
 
 const scribble = require('../src/');
+scribble.setMiddleC(6);
 let clip = scribble.clip({
-	notes: ['F#m', 'C#m', 'Dmaj', 'Bm', 'Emaj', 'Amaj', 'Dmaj', 'C#m', 'Amaj'],
-	pattern: 'x_x_x_--'.repeat(8),
-	sizzle: true
+	notes: ['CMaj'],
+	pattern: 'x' + '_'.repeat(15)
 });  
 
 scribble.midi(clip);
